@@ -4115,7 +4115,7 @@ checksum = "7da8b5736845d9f2fcb837ea5d9e2628564b3b043a70948a3f0b778838c5fb4f"
 [[package]]
 name = "subseq_agents"
 version = "0.1.0"
-source = "git+https://github.com/subseq-io/subseq_agents.git?branch=main#42550b84ad5f61a1ac56213c492bb88b2546ddbc"
+source = "git+https://github.com/subseq-io/subseq_agents.git?branch=main#023f769540a35e5c70e63921f8f8468774240546"
 dependencies = [
  "anyhow",
  "argon2",
@@ -4131,6 +4131,7 @@ dependencies = [
  "serde_json",
  "sqlx",
  "subseq_auth",
+ "subseq_util",
  "thiserror 2.0.18",
  "tokio",
  "tower",
@@ -4142,7 +4143,7 @@ dependencies = [
 [[package]]
 name = "subseq_auth"
 version = "0.1.0"
-source = "git+https://github.com/subseq-io/subseq_auth.git?branch=main#2150c97c9eaf0b9a8dbdbf3c6eaad5dfb1c1e675"
+source = "git+https://github.com/subseq-io/subseq_auth.git?branch=main#3aa16a67232926646b120f4a8c14aa043b28696a"
 dependencies = [
  "anyhow",
  "axum",
@@ -4162,12 +4163,24 @@ dependencies = [
  "serde",
  "serde_json",
  "sqlx",
+ "subseq_util",
  "time",
  "tower",
  "tower-sessions",
  "tracing",
  "url",
  "urlencoding",
+ "uuid",
+]
+
+[[package]]
+name = "subseq_util"
+version = "0.8.0"
+source = "git+https://github.com/subseq-io/subseq_util.git?branch=main#f41983004126489e2e13748cb5d9040b77f764f9"
+dependencies = [
+ "axum",
+ "serde",
+ "serde_json",
  "uuid",
 ]
 
